@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Website Layout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/jcarousel.responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+    <link rel="stylesheet" href="css/colorbox.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.colorbox.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
+  <style>
+        div {
+            box-sizing: border-box;
+        }
+        /* header */
+        .header {
+            background-color: red;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* navigation menu*/
+        .topnav {
+            
+            overflow: hidden;
+            background-color: #333;;
+        }
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            padding: 14px 16px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .topnav a:hover {
+            background-color:gray;
+            color: black;
+        }
+        .topnav a.active {
+            background-color: green;
+            color: black;
+        }
+        .column {
+            background: gray;
+            float: left;
+            width: 100%;
+        }
+        .row::after {
+            background-color: gray;
+            clear: both;
+            content: "";
+            display: table;
+        }
+        .container {
+           
+            width: 1140px;
+            margin: auto;
+        }
+        .footer {
+            background-color: blue;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+            .container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container header">
+        <h1>Header</h1>
+        <p>Resize the browser window to see the responsive effect.</p>
+    </div>
+    <div class="container topnav"><a class="active" href="#">Home</a><a href="#">Link</a><a href="#">Contact</a></div>
+    <div class="container Web">
+        <h1>List</h1>
+        <div class="jcarousel Web">
+            <div class="jcarousel ">
+                <ul>
+                        <div class="gallery">
+                            <img src="./img/p01.png" width="400" height="300" alt="Street">
+                            <div class="desc"></div>
+                        </div>
+                        <br>
+                        <div class="gallery">
+                            <img src="./img/p02.png" width="400" height="300" alt="Tree">
+                            <div class="desc"></div>
+                        </div>
+                        <br>
+                        <div class="gallery">
+                            <img src="./img/p03.png" width="400" height="300" alt="Tree sunset">
+                            <div class="desc"></div>
+                        </div>
+                        <br>
+                        <div class="gallery">
+                            <img src="./img/p04.png" width="400" height="300" alt="ontain">
+                            <div class="desc"></div>
+                        </div>
+                 </ul>
+            </div>
+            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+            <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+            <p class="jcarousel-pagination"></p>
+        </div>
+        </div>
+            <div class="Container">
+                <div class="row">
+                    <div class="column side">
+                <h2>side</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="column middle">
+                        <h2>Main content</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.
+                    Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus
+                    eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit.
+                    Praesent scelerisque tortor sed accumsan convallis.</p>
+            </div>
+            <div class="column side">
+                <h2>Side</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+            </div>
+        </div>
+    </div>
+    <h1>Colorbox Demonstration</h1>
+		<h2>Elastic Transition</h2>
+		<p><a class="group1" href="./img/p01.png" title="The way">Grouped Photo 1</a></p>
+		<p><a class="group2" href="./img/p02.png" title="The tree">Grouped Photo 2</a></p>
+		<p><a class="group3" href="./img/p03.png" title="Sunset">Grouped Photo 3</a></p>
+        <p><a class="group3" href="./img/p04.png" title="Mountains">Grouped Photo 3</a></p>
+
+	</body>
+</html>
+    <div class="container footer">
+        <h1>Footer</h1>
+    </div>
+</body>
+
+</html>
